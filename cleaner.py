@@ -27,7 +27,9 @@ def main():
             with open(sys.argv[2], 'w') as f:
                 f.write('\n'.join(cleaned))
         else:
+            print('---------------------------------------------------')
             print('Usage: python cleaner.py <input_file> <output_file>')
+            print('---------------------------------------------------')
     except FileNotFoundError:
         print('File not found. Please provide a valid full file path.')
 
